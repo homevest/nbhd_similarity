@@ -9,7 +9,7 @@ import folium
 
 # Data & NBHD imports
 import censusdata
-from us import states 
+from us import states
 from nbhd_similarity import *
 from data_preparing import *
 
@@ -59,4 +59,4 @@ def display_page(pathname):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server("0.0.0.0", port=80)
